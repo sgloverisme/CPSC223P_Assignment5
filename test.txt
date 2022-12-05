@@ -1,0 +1,18 @@
+..F...
+======================================================================
+FAIL: test_list_int (__main__.Test03_ModifyContact)
+*** Test03 *** GIVEN: filename t99.dat = {'7145551111': ['Steve', 'Jobs'], '5625553333': ['Bill', 'Gates']} AND contacts = Contacts(filename='t99.dat') *** FUNCTION CALL: contacts.modify_contact(id = '7145551111', first_name = 'Richard', last_name = 'Stallman') *** EXPECT: filename t99.dat = {'5625553333': ['Bill', 'Gates'], '7145551111': ['Richard', 'Stallman']} ***
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\s_glover\Desktop\python\assignment_5-sgloverisme\test.py", line 54, in test_list_int
+    self.assertEqual(c, {'5625553333': ['Bill', 'Gates'], '7145551111': ['Richard', 'Stallman']})
+AssertionError: {'7145551111': ['Richard', 'Stallman'], '56[48 chars]2']}} != {'5625553333': ['Bill', 'Gates'], '71455511[24 chars]an']}
++ {'5625553333': ['Bill', 'Gates'], '7145551111': ['Richard', 'Stallman']}
+- {'5': {'5': ['6', '2']},
+-  '5625553333': ['Bill', 'Gates'],
+-  '7145551111': ['Richard', 'Stallman']}
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.025s
+
+FAILED (failures=1)
